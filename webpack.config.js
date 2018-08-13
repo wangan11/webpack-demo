@@ -5,6 +5,7 @@ module.exports = {
         hello: './src/script/hello.js',
         world: './src/script/world.js'
     },
+    
     output:{
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].js'
