@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         hello: './src/script/hello.js',
@@ -27,10 +27,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
+        new htmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index-[hash].html',
-            inject: 'head'
+            inject: 'head',
+            title:'hello world'
         })
     ]
 };
